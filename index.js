@@ -13,8 +13,6 @@ const expressionCalc = child.spawnSync('bin/expression_calc_tree.exe', {
     ],
     input: "2 + 2",
     timeout: 20,
-
-
 });
 
 expressionCalc.stdout.on('data', (chunk) => {
