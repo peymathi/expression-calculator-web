@@ -1,0 +1,31 @@
+
+
+project (expression_calc_tree) {
+
+  exename = expression_calc_tree.exe
+  exeout = ./bin
+  install = ./bin
+  includes += headers inline source template
+
+
+  specific (make, gnuance) {
+    compile_flags += -std=c++11
+  }
+
+  Header_Files {
+    header
+  }
+
+  Source_Files {
+    source
+  }
+
+  Template_Files {
+    template
+  }
+
+  Inline_Files {
+    inline
+  }
+
+}

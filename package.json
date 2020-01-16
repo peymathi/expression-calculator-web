@@ -4,11 +4,14 @@
   "description": "web hosted version of the stack and tree implementations of the expression calculator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node-gyp build",
+    "start": "nodemon index.js"
   },
   "author": "Peyton Mathis",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "gypfile": true
 }
